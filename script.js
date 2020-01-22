@@ -1,8 +1,6 @@
-function display()
-{
+function display() {
 
   const time = new Date();
   document.querySelector('h3').innerHTML = time.toUTCString();
 
-}
-setInterval(display, 1000);
+} setInterval(display, 1000);
