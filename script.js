@@ -1,4 +1,4 @@
 const date = new Date();
 
 
-document.querySelector('h1').innerHTML = date;
+document.querySelector('h1').innerHTML = date.toDateString();
