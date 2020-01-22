@@ -20,4 +20,4 @@ function display()
    h1.textContent = output;
    h3.textContent = output2;
 }
-setInterval(display, 500);
+setInterval(display, 1000);
