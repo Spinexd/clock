@@ -9,14 +9,15 @@ function display()
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
    const hour = today.getHours() > 24 ? today.getHours() - 12 : today.getHours();
-   const minute = today.getMinutes() > 10 ? '0' : ' ') + today.getMinutes();
-   const seconds = today.getSeconds() > 10 ? '0' : ' ') + today.getSeconds();
+   const minute = today.getMinutes();
+   const seconds = today.getSeconds();
 
 
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
-
+   getMinutes = (getMinutes > 10 ? '0' : ' ') + today.getMinutes();
+   getSeconds = (getSeconds > 10 ? '0' : ' ') + today.getSeconds();
    h1.textContent = output;
    h3.textContent = output2;
 }
