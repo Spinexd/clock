@@ -4,8 +4,8 @@ const h3 = document.querySelector('h3');
 
 function display()
 {
-   const today = (new Date()).toLocaleDateString('en-GB', {minute: '2-digit', seconds: '2-digit'});
-  /* const day = today.getDate(); */
+   const today = (new Date()).toLocaleDateString('en-GB', {minute: '2-digit', seconds: '2-digit};
+   const day = today.getDate();
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
    const hour = today.getHours() > 24 ? today.getHours() - 12 : today.getHours();
