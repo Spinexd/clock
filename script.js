@@ -1,4 +1,4 @@
-const date = new Date.toLocaleString({hour: '2-digit', minute: '2digit', seconds: '2-digit'});
+const date = new Date();
 
 
 document.querySelector('h1').innerHTML = date;
