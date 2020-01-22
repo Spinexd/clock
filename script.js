@@ -9,7 +9,7 @@ function display()
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
    const hour = today.getHours() > 24 ? today.getHours() - 12 : today.getHours();
-   const minute = today.getMinutes() > 10 ? '0' : '' + today.getMinutes();
+   const minute = today.getMinutes() < 10 ? '0' : '' + today.getMinutes();
    const seconds = today.getSeconds();
 
 
