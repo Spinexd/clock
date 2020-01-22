@@ -9,8 +9,8 @@ function display()
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
    const hour = today.getHours() > 24 ? today.getHours() - 12 : today.getHours();
-   const minute = today.getMinutes() > 10 ? '0' : '') today.getMinutes();
-   const seconds = today.getSeconds() > 10 ? today.getSeconds() - '0' : today.getSeconds();
+   const minute = today.getMinutes() > 10 ? '0' : ' ') today.getMinutes();
+   const seconds = today.getSeconds() > 10 ? '0' : ' ') today.getSeconds();
 
 
    const output = day + '/' + month + '-' + year;
