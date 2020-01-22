@@ -13,7 +13,7 @@ function display()
    const seconds = today.getSeconds();
 
    const output = day + '/' + month + '-' + year;
-   const output2 = hour + ':' + minute + ':' + seconds + '0';
+   const output2 = hour + ':' + minute + ':' + seconds + 0;
 
 
    h1.textContent = output;
