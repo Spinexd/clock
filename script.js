@@ -4,7 +4,7 @@ const h3 = document.querySelector('h3');
 
 function display()
 {
-   const today = new Date();
+   const today = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
    const day = today.getDate();
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
