@@ -16,8 +16,6 @@ function display()
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
-   currentMinutes = (currentMinutes < 10 ? "0" : "")  + currentMinutes;
-     currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
 
    h1.textContent = output;
    h3.textContent = output2;
