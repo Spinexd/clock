@@ -16,8 +16,8 @@ function display()
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
-   getMinutes = (getMinutes < 10 ? "0" : "")  + getMinutes;
-   getSeconds = ( getSeconds < 10 ? "0" : "" ) + getSeconds;
+   getMinutes = (getMinutes ≤ 10 ? "0" : "")  + getMinutes;
+   getSeconds = ( getSeconds ≤ 10 ? "0" : "" ) + getSeconds;
    h1.textContent = output;
    h3.textContent = output2;
 }
