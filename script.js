@@ -13,6 +13,7 @@ function display()
    const seconds = today.getSeconds();
 
 
+   const options = { minute: '2-digit', seconds: '2-digit'};
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
