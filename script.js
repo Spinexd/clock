@@ -1,10 +1,10 @@
-const h1 = document.querySelector('h1');
+/*const h1 = document.querySelector('h1');
 const h3 = document.querySelector('h3');
 
 
 function display()
 {
-   const today = (new Date()).toLocaleDateString('en-GB', {weekday: 'long',  month: '2-digit', year: 'numeric'});
+   const date = (new Date()).toLocaleDateString('en-GB', {weekday: 'long',  month: '2-digit', year: 'numeric'});
    /*const day = today.getDate();
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
@@ -17,8 +17,10 @@ function display()
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds; */
 
+document.querySelector('h1').innerHTML = Date();
 
-   h1.textContent = Date.toLocaleDateString();
-   h3.textContent = Date.toLocaleDateString();
-}
+  /* h1.textContent = Date.toLocaleDateString();
+   h3.textContent = Date.toLocaleDateString();*/
+/*}
 setInterval(display, 1000);
+*/
