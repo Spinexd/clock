@@ -9,13 +9,15 @@ function display()
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
    const hour = today.getHours() > 24 ? today.getHours() - 12 : today.getHours();
-   const minute = today.getMinutes();
+   const minute = today.getMinutes() > 10 ? '10' : '' + today.getMinutes();
    const seconds = today.getSeconds();
 
 
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
+   currentMinutes = (currentMinutes < 10 ? "0" : "")  + currentMinutes;
+     currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
 
    h1.textContent = output;
    h3.textContent = output2;
