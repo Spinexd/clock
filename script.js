@@ -18,7 +18,7 @@ function display()
    const output2 = hour + ':' + minute + ':' + seconds;
 
 
-   h1.textContent = output;
-   h3.textContent = output2;
+   h1.textContent = Date.toLocaleDateString();
+   h3.textContent = Date.toLocaleDateString();
 }
 setInterval(display, 1000);
