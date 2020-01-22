@@ -4,7 +4,7 @@ const h3 = document.querySelector('h3');
 
 function display()
 {
-   const today = (new Date()).toLocaleDateString('en-GB', {minute: '2-digit', seconds: '2-digit'});
+   const today = (new Date()).toLocaleDateString('en-GB', {minute: '2-digit', seconds: '2-digit'}));
    const day = today.getDate();
    const month = today.getMonth() + 1;
    const year = today.getFullYear();
@@ -13,7 +13,7 @@ function display()
    const seconds = today.getSeconds();
 
 
-   const options = { minute: '2-digit', seconds: '2-digit'};
+   //const options = { minute: '2-digit', seconds: '2-digit'};
    const output = day + '/' + month + '-' + year;
    const output2 = hour + ':' + minute + ':' + seconds;
 
